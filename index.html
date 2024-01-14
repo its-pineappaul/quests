@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D Campaign Quest Manager</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        #container {
+            display: flex;
+            flex-wrap: nowrap;
+            height: 100vh;
+            overflow: hidden;
+        }
+        #quest-list-pane, #quest-detail-pane {
+            flex-basis: 50%;
+            overflow-y: auto;
+            padding: 20px;
+        }
+        #quest-list-pane {
+            background-color: #f0f0f0;
+        }
+        #quest-detail-pane {
+            background-color: #fff;
+        }
+        .quest-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #ddd;
+            cursor: pointer;
+        }
+        .quest-item:hover {
+            background-color: #ccc;
+        }
+        .status {
+            margin-left: 10px;
+            padding: 2px 5px;
+            border-radius: 5px;
+            font-size: 0.8em;
+            color: #fff;
+        }
+        .active { background-color: green; }
+        .paused { background-color: orange; }
+        .abandoned { background-color: red; }
+        .complete { background-color: blue; }
+
+        /* Mobile specific styles */
+        @media (max-width: 600px) {
+            #container {
+                flex-direction: column;
+                transform: translateX(0%);
+                transition: transform 0.5s ease;
+            }
+            #quest-list-pane, #quest-detail-pane {
+                flex-basis: 100%;
+            }
+            .hide-list-pane {
+                transform: translateX(-100%);
+            }
+        }
+        /* Quest detail styling */
+        .quest-detail {
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-top: 10px;
+        }
+        .quest-title {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .quest-status {
+            display: inline-block;
+            margin-left: 10px;
+            padding: 2px 5px;
+            border-radius: 5px;
+            font-size: 0.8em;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="quest-list-pane">
+            <!-- Quest items will be populated here -->
+        </div>
+        <div id="quest-detail-pane">
+            <!-- Quest details will be shown here -->
+        </div>
+    </div>
+    <script>
+        const questData = [
+            { title: "Find the Eidolon of Phenax", details: "The Council of Meletis has sent adventuring parties out across the mortal realm in search for the storied Eidolon of Phenax.  It is said that with his Eidolon, Phenax could be brought under the gods' control.", status: "active" },
+            { title: "Make Brux Human Again", details: "A Returned named Brux has been partially resurrected, his soul connected to his Returned body, but the process was never completed.  He is currently a half human, half undead abomination, but has all of the information needed to finish the resurrection and become human again.", status: "active" },
+            { title: "???? ??? ????? ???? ?????? ??? ???????", details: "??? ???? ? ??????? ?? ???? ?????.  ???? ???? ?? ???? ??????, ??? ????? ?????? ??? ?? ?? ??.", status: "??????" },
+            { title: "Collect the Nine Elemental Shards", details: "ong ago, Keranos and Purphoros worked together in secret to forge a new god who would control Magic in all its forms.  Their experiment was a failure, shattering into 9 shards, which were scattered across the mortal realm.  Now each god has sent a champion to collect the shards and use them to become a demigod.", status: "paused" },
+            { title: "Retrieve the Stolen Artifacts for Thassa", details: "Long ago, Phenax snuck into Thassa's private vault and stole several of her most prized artifacts, hiding them around Theros.  Jimbei was given the quest to return them after the original champion passed away.", status: "paused" },
+            { title: "Stop the Necromancer Alchemist", details: "A mysterious alchemist is performing heinous experiments on Returned in an effort to resurrect his deceased wife and child.", status: "complete" },
+            { title: "Bring a Hydra Heart to Thassa", details: "Cetos, a hermit who was exiled by Thassa for attempting to sneak into her private treasury, has been given the opportunity to return to Thassa, if he can bring her the heart of an Ironscale Hydra.", status: "complete" },
+            // Add more quests as needed
+        ];
+    
+        const questListPane = document.getElementById('quest-list-pane');
+        const questDetailPane = document.getElementById('quest-detail-pane');
+        const container = document.getElementById('container');
+    
+        questData.forEach(quest => {
+            const questItem = document.createElement('div');
+            questItem.classList.add('quest-item');
+            questItem.textContent = quest.title;
+    
+            const statusSpan = document.createElement('span');
+            statusSpan.classList.add('status', quest.status);
+            statusSpan.textContent = quest.status.charAt(0).toUpperCase() + quest.status.slice(1);
+            questItem.appendChild(statusSpan);
+    
+            questItem.onclick = () => showQuestDetails(quest);
+            questListPane.appendChild(questItem);
+        });
+    
+        function showQuestDetails(quest) {
+            questDetailPane.innerHTML = `
+                <div class="quest-detail">
+                    <div class="quest-title">${quest.title}</div>
+                    <span class="quest-status ${quest.status}">${quest.status.charAt(0).toUpperCase() + quest.status.slice(1)}</span>
+                    <p>${quest.details}</p>
+                </div>
+            `;
+            if (window.innerWidth <= 600) {
+                container.classList.add('hide-list-pane');
+            }
+        }
+        
+        // For mobile view, allow going back to the quest list
+        if (window.innerWidth <= 600) {
+            const backButton = document.createElement('button');
+            backButton.textContent = 'Back to Quests';
+            backButton.onclick = () => {
+                container.classList.remove('hide-list-pane');
+            };
+            questDetailPane.prepend(backButton);
+        }
+    </script>
+</body>
+</html>
+    
