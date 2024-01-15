@@ -1,6 +1,6 @@
 [
     {
-        "title": "MAIN QUEST: Find the Eidolon of Phenax",
+        "title": "Find the Eidolon of Phenax",
         "details": "The Council of Meletis has sent adventuring parties out across the mortal realm in search for the storied Eidolon of Phenax.  It is said that with his Eidolon captured and subdued, Phenax could finally be brought under the gods' control. <br/><br/> <i>Update:  Brux was found trapped in the temple.  He has a capsule that can be used to contain an eidolon, and a cryptic text suggesting there is a ritual that can be used to reveal the soul of a god.</i>",
         "status": "active",
         "updates": [
@@ -11,13 +11,12 @@
             "<input type='checkbox' checked enabled>Explore the Labyrinth layer of the first pyramid",
             "<input type='checkbox' checked enabled>Defeat the Ram to get out of the first layer",
             "<input type='checkbox' checked enabled>Clear out the metallic birds to transcend through the second level",
-            "<input type='checkbox' checked enabled>Rest at the Midpoint Lounge",
             "<input type='checkbox' checked enabled>Escape the nightmares of the Siren-Hags",
-            "<input type='checkbox' unchecked disabled><b>Activate the ritual circle at the top of the 3 pyramids</b>"
+            "<input type='checkbox' unchecked disabled><b>Activate the ritual circle at the top of the pyramid</b>"
         ]
     },
     {
-        "title": "SIDE QUEST: Make Brux Human Again",
+        "title": "Make Brux Human Again",
         "details": "A Returned named Brux has been partially resurrected, his soul connected to his Returned body, but the process was never completed.  He is currently an abomination, but has all of the information needed to finish the job. <br/><br/> <i>Necromancer's notes: '...spreading the elixir of immortality in the teeth of Katachthon will reveal the soul of a god.'</i>",
         "status": "active",
         "updates": [
