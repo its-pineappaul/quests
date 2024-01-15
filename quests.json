@@ -1,0 +1,115 @@
+[
+    {
+        "title": "MAIN QUEST: Find the Eidolon of Phenax",
+        "details": "The Council of Meletis has sent adventuring parties out across the mortal realm in search for the storied Eidolon of Phenax.  It is said that with his Eidolon captured and subdued, Phenax could finally be brought under the gods' control. <br/><br/> <i>Update:  Brux was found trapped in the temple.  He has a capsule that can be used to contain an eidolon, and a cryptic text suggesting there is a ritual that can be used to reveal the soul of a god.</i>",
+        "status": "active",
+        "updates": [
+            "<input type='checkbox' checked enabled>Travel to Akros",
+            "<input type='checkbox' checked enabled>Find a party member to replace Martin and Makashi",
+            "<input type='checkbox' checked enabled>Locate the pyramid dungeon in the Katachthon Mountains",
+            "<input type='checkbox' checked enabled>Find a way into the mysterious pyramids",
+            "<input type='checkbox' checked enabled>Explore the Labyrinth layer of the first pyramid",
+            "<input type='checkbox' checked enabled>Defeat the Ram to get out of the first layer",
+            "<input type='checkbox' checked enabled>Clear out the metallic birds to transcend through the second level",
+            "<input type='checkbox' checked enabled>Rest at the Midpoint Lounge",
+            "<input type='checkbox' checked enabled>Escape the nightmares of the Siren-Hags",
+            "<input type='checkbox' unchecked disabled><b>Activate the ritual circle at the top of the 3 pyramids</b>"
+        ]
+    },
+    {
+        "title": "SIDE QUEST: Make Brux Human Again",
+        "details": "A Returned named Brux has been partially resurrected, his soul connected to his Returned body, but the process was never completed.  He is currently an abomination, but has all of the information needed to finish the job. <br/><br/> <i>Necromancer's notes: '...spreading the elixir of immortality in the teeth of Katachthon will reveal the soul of a god.'</i>",
+        "status": "active",
+        "updates": [
+            "<input type='checkbox' checked enabled>Allow Brux to commune with the dead necromancer to determine elixir requirements",
+            "<input type='checkbox' unchecked disabled><b>Help Brux find the last ingredient in the Necromancer's resurrection elixir</b>"
+        ]
+    },
+    {
+        "title": "???? ??? ????? ???? ?????? ??? ???????",
+        "details": "????? ?? ? ??????? ?? ??? ?????.  ??? ???? ?? ?? ???? ??????. ???? ?? ????????",
+        "status": "??????",
+        "updates": [
+            "<input type='checkbox' checked enabled>?????????? ??? ?????",
+            "<input type='checkbox' unchecked disabled>????? ??? ??????? ?????? ?? ?? ???????? ?? ??? ???????"
+        ]
+    },
+    {
+        "title": "Collect the Nine Elemental Shards",
+        "details": "Long ago, Keranos and Purphoros worked together in secret to forge a new god who would control Magic in all its forms.  Their experiment was a failure, shattering into 9 shards, which were scattered across the mortal realm.  Now each god has sent a champion to collect the shards and use them to become a demigod. <br/> <br/> <i>Update: Prokopos has left the party to pursue business partnerships in Meletis, but has hired the party to bring him some of the remaining shards.</i><br/> <br/> <i>Update: The party betrayed Prokopos by delivering one of the shards to Metapo, a centaur of Purphoros, siding with Purphoros and inspiring the ire of Keranos.</i>",
+        "status": "paused",
+        "updates": [
+            "<input type='checkbox' checked enabled>Claim the Shard of Lightning from the Temple of Keranos",
+            "<span class='red-x'>✖</span><span class='strikethrough'>Find the Shard of the Mind in the Phoenix Stairs north the Skola Vale</span>",
+            "<input type='checkbox' checked enabled>Secure the Shard of the Mind from the Necromancer who has taken it",
+            "<span class='red-x'>✖</span><span class='strikethrough'>Return any acquired Shards to Prokopos in Meletis</span>",
+            "<input type='checkbox' checked enabled>Give the Shard of the Mind to Metapo, servant of Purphoros",
+            "<input type='checkbox' unchecked disabled><b>Locate the an unknown shard in the Empty Eye north of the Skola Vale</b>",
+            "<input type='checkbox' unchecked disabled><b>Decrypt the cryptic prophecy to locate the remaining Elemental Shards before Prokopos finds them</b>"
+        ]
+    },
+    {
+        "title": "Compete in the Iroan Games",
+        "details": "Every year in Akros the Iroan Games pit the strongest and brightest of warriors against each other in feats of might, wit, and bravery, honoring Iroas.  Can the champions of Thassa, Purphoros and Karametra bring glory to their gods this year during the competition?",
+        "status": "complete",
+        "updates": [
+            "<input type='checkbox' checked enabled>Compete in the Obstacle Course",
+            "<input type='checkbox' checked enabled>Compete in the Monster Fighting Arena",
+            "<input type='checkbox' checked enabled>Prevent the phony Kruphix priests from opening an interdimensional rift",
+            "<input type='checkbox' checked enabled>Collect your Boons from Iroas at the Temple of Iroas in Akros"
+        ]
+    },
+    {
+        "title": "Retrieve the Stolen Artifacts for Thassa",
+        "details": "Long ago, Phenax snuck into Thassa's private vault and stole several of her most prized artifacts, hiding them around Theros.  Jimbei was given the quest to return them after the original champion, Preon, passed away.",
+        "status": "complete",
+        "updates": [
+            "<input type='checkbox' checked enabled>Return the DNGLHOPR (Quadrident of Maelstroms) to the sea",
+            "<input type='checkbox' checked enabled>Seek out the Glaive of Elemental Mastery in the Skola Vale",
+            "<input type='checkbox' checked enabled>Take the glaive from Flow Rider in the Skola Vale",
+            "<input type='checkbox' checked enabled>Return the glaive to the sea at the Temple of Illumination"
+        ]
+    },
+    {
+        "title": "Stop the Necromancer Alchemist",
+        "details": "A mysterious alchemist is performing heinous experiments on Returned in an effort to resurrect his deceased wife and child.",
+        "status": "complete",
+        "updates": [
+            "<input type='checkbox' checked enabled>Determine the source of the violent Returned that attacked on the road to Meletis",
+            "<input type='checkbox' checked enabled>Remove the mysterious source of hallucinogenic runoff near the town of Athernios",
+            "<input type='checkbox' checked enabled>Find the source of the erratic Returned appearing near eastern Setessa",
+            "<input type='checkbox' checked enabled>Infiltrate the Necromancer's lair",
+            "<input type='checkbox' checked enabled>Defeat the Medusa to stop the Returned experiments permanently (?)"
+        ]
+    },
+    {
+        "title": "Bring a Hydra Heart to Thassa",
+        "details": "Cetos, a hermit who was exiled by Thassa for attempting to sneak into her private treasury, has been given the opportunity to return to Thassa, if he can bring her the heart of an Ironscale Hydra.",
+        "status": "complete",
+        "updates": [
+            "<input type='checkbox' checked enabled>Kill the Ironscale Hydra",
+            "<input type='checkbox' checked enabled>Preserve the heart until it can be brought to the sea",
+            "<input type='checkbox' checked enabled>Return the heart to the sea at the Temple of Illumination"
+        ]
+    },
+    {
+        "title": "Save the Town from the Chimera!",
+        "details": "The Festival of Storms is in full force in the town of Krimnos, but Phenax has plans to foil it.",
+        "status": "complete",
+        "updates": [
+            "<input type='checkbox' checked enabled>Enjoy the festivities in the town",
+            "<input type='checkbox' checked enabled>Protect the town from the mechanical chimera that was animated"
+        ]
+    },
+    {
+        "title": "Uncover the Plot in Altrisos",
+        "details": "Three budding champions were brought together to the coastal town of Altrisos by their gods to find the source of potentially catastrophic discord in the town",
+        "status": "complete",
+        "updates": [
+            "<input type='checkbox' checked enabled>Investigate the suspicious Epharan clerics",
+            "<input type='checkbox' checked enabled>Interrogate the governor of the town",
+            "<input type='checkbox' checked enabled>Track the Epharan dissidents to their lair",
+            "<input type='checkbox' checked enabled>Destroy the hidden temple to Phenax beneath the town"
+        ]
+    }
+]
