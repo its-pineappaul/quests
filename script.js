@@ -35,20 +35,10 @@ function showQuestDetails(quest) {
             <span class="quest-status ${quest.status}">${quest.status.charAt(0).toUpperCase() + quest.status.slice(1)}</span>
             <p>${quest.details}</p>
             ${updatesHtml}
+            <img src="${quest.image}" alt="${quest.title}" style="width: 100%; height: auto;">
         </div>
     `;
     if (window.innerWidth <= 600) {
         container.classList.add('hide-list-pane');
     }
-}
-    
-
-// For mobile view, allow going back to the quest list
-if (window.innerWidth <= 600) {
-    const backButton = document.createElement('button');
-    backButton.textContent = 'Back to Quests';
-    backButton.onclick = () => {
-        container.classList.remove('hide-list-pane');
-    };
-    questDetailPane.prepend(backButton);
 }

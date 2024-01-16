@@ -2,7 +2,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Garamond', sans-serif;
 }
 #container {
     display: flex;
@@ -16,18 +16,24 @@ body, html {
     padding: 20px;
 }
 #quest-list-pane {
-    background-color: #f0f0f0;
+    background-image: url('images/theros\ theme\ 4_v2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 #quest-detail-pane {
-    background-color: #fff;
+    background-color: #0a0b0a;
 }
 .quest-item {
     display: flex;
+    font-size: 1.4em;
     align-items: center;
     padding: 10px;
     margin: 5px 0;
-    background-color: #ddd;
+    background-color: #b9b9b9;
+    opacity: 0.9;
     cursor: pointer;
+    font-family: 'Almendra', sans-serif;
 }
 .quest-item:hover {
     background-color: #ccc;
@@ -39,10 +45,10 @@ body, html {
     font-size: 0.8em;
     color: #fff;
 }
-.active { background-color: green; }
-.paused { background-color: orange; }
-.abandoned { background-color: red; }
-.complete { background-color: blue; }
+.active { background-color: rgb(201, 158, 16); }
+.paused { background-color: rgb(135, 111, 67); }
+.abandoned { background-color: rgb(103, 45, 45); }
+.complete { background-color: rgb(82, 82, 82); }
 /* Mobile specific styles */
 @media (max-width: 600px) {
     #container {
@@ -60,8 +66,9 @@ body, html {
 /* Quest detail styling */
 .quest-detail {
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #253926;
     margin-top: 10px;
+    color: white;
 }
 
 .quest-detail ul {
@@ -72,20 +79,23 @@ body, html {
 /* You can also style the list items (li) if needed */
 .quest-detail li {
     font-style: italic;
+    font-size: 1.4em;
     margin-bottom: 5px; /* Example of additional styling for list items */
 }
 
 .quest-title {
-    font-size: 1.2em;
+    font-size: 2.0em;
     font-weight: bold;
+    font-family: 'Almendra', sans-serif;
 }
 .quest-status {
     display: inline-block;
     margin-left: 10px;
     padding: 2px 5px;
     border-radius: 5px;
-    font-size: 0.8em;
+    font-size: 1.0em;
     color: #fff;
+    font-family: 'Almendra', sans-serif;
 }
 
 .red-x {
