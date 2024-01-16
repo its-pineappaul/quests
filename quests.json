@@ -23,7 +23,8 @@
         "updates": [
             "<input type='checkbox' unchecked disabled><b>Help Brux find the last ingredient in the Necromancer's resurrection elixir</b>",
             "<input type='checkbox' checked enabled>Allow Brux to commune with the dead necromancer to determine elixir requirements"
-        ]
+        ],
+        "image": "images/make brux human again.png"
     },
     {
         "title": "???? ??? ????? ???? ?????? ??? ???????",
@@ -32,7 +33,8 @@
         "updates": [
             "<input type='checkbox' unchecked disabled>????? ??? ??????? ?????? ?? ?? ???????? ?? ??? ???????",
             "<input type='checkbox' checked enabled>?????????? ??? ?????"
-        ]
+        ],
+        "image": "images/whats this exactly.png"
     },
     {
         "title": "Collect the Nine Elemental Shards",
@@ -46,7 +48,8 @@
             "<input type='checkbox' checked enabled>Secure the Shard of the Mind from the Necromancer who has taken it",
             "<span class='red-x'>✖</span><span class='strikethrough'>Find the Shard of the Mind in the Phoenix Stairs north the Skola Vale</span>",
             "<input type='checkbox' checked enabled>Claim the Shard of Lightning from the Temple of Keranos"
-        ]
+        ],
+        "image": "images/nine elemental shards.png"
     },
     {
         "title": "Compete in the Iroan Games",
@@ -57,7 +60,8 @@
             "<input type='checkbox' checked enabled>Prevent the phony Kruphix priests from opening an interdimensional rift",
             "<input type='checkbox' checked enabled>Compete in the Monster Fighting Arena",
             "<input type='checkbox' checked enabled>Compete in the Obstacle Course"
-        ]
+        ],
+        "image": "images/iroan games.png"
     },
     {
         "title": "Retrieve the Stolen Artifacts for Thassa",
@@ -68,7 +72,8 @@
             "<input type='checkbox' checked enabled>Seek out the Glaive of Elemental Mastery in the Skola Vale",
             "<input type='checkbox' checked enabled>Take the glaive from Flow Rider in the Skola Vale",
             "<input type='checkbox' checked enabled>Return the glaive to the sea at the Temple of Illumination"
-        ]
+        ],
+        "image": "images/retrieve artifacts.png"
     },
     {
         "title": "Stop the Necromancer Alchemist",
@@ -80,7 +85,8 @@
             "<input type='checkbox' checked enabled>Find the source of the erratic Returned appearing near eastern Setessa",
             "<input type='checkbox' checked enabled>Infiltrate the Necromancer's lair",
             "<input type='checkbox' checked enabled>Defeat the Medusa to stop the Returned experiments permanently (?)"
-        ]
+        ],
+        "image": "images/necromancer.png"
     },
     {
         "title": "Bring a Hydra Heart to Thassa",
@@ -90,7 +96,8 @@
             "<input type='checkbox' checked enabled>Kill the Ironscale Hydra",
             "<input type='checkbox' checked enabled>Preserve the heart until it can be brought to the sea",
             "<input type='checkbox' checked enabled>Return the heart to the sea at the Temple of Illumination"
-        ]
+        ],
+        "image": "images/hydra heart.png"
     },
     {
         "title": "Save the Town from the Chimera!",
@@ -99,7 +106,8 @@
         "updates": [
             "<input type='checkbox' checked enabled>Enjoy the festivities in the town",
             "<input type='checkbox' checked enabled>Protect the town from the mechanical chimera that was animated"
-        ]
+        ],
+        "image": "images/mechanical chimera.png"
     },
     {
         "title": "Uncover the Plot in Altrisos",
@@ -110,6 +118,7 @@
             "<input type='checkbox' checked enabled>Interrogate the governor of the town",
             "<input type='checkbox' checked enabled>Track the Epharan dissidents to their lair",
             "<input type='checkbox' checked enabled>Destroy the hidden temple to Phenax beneath the town"
-        ]
+        ],
+        "image": "images/secrets in altrisos.png"
     }
 ]
