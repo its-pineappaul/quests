@@ -19,24 +19,26 @@ body, html {
     background-image: url('images/theros\ theme\ 4_v2.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
 }
 #quest-detail-pane {
-    background-color: #0a0b0a;
+    background-color: #000000;
 }
 .quest-item {
     display: flex;
     font-size: 1.4em;
     align-items: center;
-    padding: 10px;
-    margin: 5px 0;
-    background-color: #b9b9b9;
-    opacity: 0.9;
+    padding: 11px;
+    margin: 15px 0;
+    background: linear-gradient(to bottom, transparent, #a97b59);
+    opacity: 0.6;
     cursor: pointer;
     font-family: 'Almendra', sans-serif;
+    border-radius: 5px 10px 10px 5px;
+    color: white;
 }
 .quest-item:hover {
-    background-color: #ccc;
+    opacity: 1.0;
 }
 .status {
     margin-left: 10px;
@@ -66,10 +68,10 @@ body, html {
 /* Quest detail styling */
 .quest-detail {
     padding: 10px;
-    border: 1px solid #253926;
     margin-top: 10px;
     color: white;
-}
+    border-radius: 10px 5px 15px 20px;}
+
 
 .quest-detail ul {
     list-style-type: none; /* Removes the bullet points */
