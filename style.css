@@ -26,12 +26,12 @@ body, html {
 }
 .quest-item {
     display: flex;
-    font-size: 1.4em;
+    font-size: 0.9em;
     align-items: center;
-    padding: 11px;
-    margin: 15px 0;
+    padding: 9px;
+    margin: 5px 0;
     background: linear-gradient(to bottom, transparent, #a97b59);
-    opacity: 0.6;
+    opacity: 0.7;
     cursor: pointer;
     font-family: 'Almendra', sans-serif;
     border-radius: 5px 10px 10px 5px;
